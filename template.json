@@ -1,0 +1,50 @@
+{
+  "_how_to": "Fill 'inputs' from the Input sheet of fcffsimpleginzu.xlsx and 'expected' from its Valuation output sheet (years 1-10). Then run: python -m dcf.validate validation/template.json",
+
+  "inputs": {
+    "_map": "Each key below sits next to the matching label in Damodaran's Input sheet.",
+    "company": "Company name",
+    "revenue": 0,
+    "ebit": 0,
+    "debt": 0,
+    "cash": 0,
+    "non_operating_assets": 0,
+    "minority_interests": 0,
+    "shares_outstanding": 0,
+    "price": 0,
+    "effective_tax_rate": 0,
+    "marginal_tax_rate": 0,
+    "revenue_growth_y1": 0,
+    "op_margin_y1": 0,
+    "revenue_growth_y2_5": 0,
+    "target_margin": 0,
+    "convergence_year": 5,
+    "sales_to_capital": 0,
+    "sales_to_capital_y6_10": 0,
+    "riskfree_rate": 0,
+    "wacc_initial": 0,
+    "mature_erp": 0.0423,
+    "wacc_terminal": null,
+    "terminal_growth": null,
+    "terminal_roc": null,
+    "options_value": 0,
+    "nol_carryforward": 0,
+    "reinvestment_lag": 1
+  },
+
+  "expected": {
+    "revenue":         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "ebit":            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "ebit_after_tax":  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "reinvestment":    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "fcff":            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "cost_of_capital": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "pv_fcff":         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "terminal_value": 0,
+    "pv_terminal": 0,
+    "sum_pv_fcff": 0,
+    "value_operating": 0,
+    "equity_value": 0,
+    "value_per_share": 0
+  }
+}

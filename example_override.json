@@ -1,0 +1,6 @@
+{
+  "_comment": "Your story goes here. Any DCFInputs field can be overridden; everything else comes from live data.",
+  "target_margin": 0.17,
+  "convergence_year": 6,
+  "revenue_growth_y2_5": 0.07
+}
